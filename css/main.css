@@ -230,6 +230,16 @@ a:hover{
     font-family: 'lato';
 }
 
+.box5 {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+    float: right;
+    font-size: 14pt;
+    font-family: 'lato';
+}
+
 .image {
     display: block;
     width: 100%;
