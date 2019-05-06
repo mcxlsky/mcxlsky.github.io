@@ -285,6 +285,10 @@ a:hover{
     opacity: 1;
 }
 
+.box5:hover .overlay, .box5:hover .overlayFade{
+    opacity: 1;
+}
+
 @media only screen and (max-width: 800px) {
   h1 {
     font-family: 'canada-type-gibson', sans-serif;
