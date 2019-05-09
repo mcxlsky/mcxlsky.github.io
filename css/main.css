@@ -335,7 +335,7 @@ a:hover{
   h1 a{
     font-family: 'canada-type-gibson', sans-serif;
     font-weight: lighter;
-    font-size: 6vw;
+    font-size: 32pt;
     /* color: black; */
   }
 }
@@ -344,7 +344,7 @@ a:hover{
   h1 a:hover{
     font-family: 'canada-type-gibson', sans-serif;
     font-weight: lighter;
-    font-size: 6vw;
+    font-size: 32pt;
     /* color: #FF6F59; */
   }
 }
