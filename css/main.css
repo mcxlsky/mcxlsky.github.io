@@ -120,6 +120,10 @@ ul li{
       height: 75px;
 }
 
+.o-footer {
+    clear:left;
+}
+
 .o-navigation-alt {
       display:inline-block;
 
@@ -497,7 +501,7 @@ label {
     position: relative;
     max-width: 40%;
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 5%;
 
 }
 
