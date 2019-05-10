@@ -497,15 +497,8 @@ label {
     position: relative;
     max-width: 40%;
     display: inline-block;
-    margin-left: 75px;
-    /* float: right; */
-    /* -webkit-column-count: 2; */
-   /* -moz-column-count: 2; */
-        /* column-count: 2; */
-    /* column-gap: 30px; */
-    /* column-width: 200px; */
-    /* background-color: #75ffa6; */
-    /* padding: 5%; */
+    margin-left: 10%;
+
 }
 
 @media only screen and (max-width: 900px) {
