@@ -262,6 +262,14 @@ right: 0;
       margin-bottom: 20px;
 }
 
+.m-aboutsection {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+     /* grid-gap: 15px; */
+     /* margin-top: 10px; */
+     /* margin-bottom: 20px; */
+}
+
 
 .box1 {
     position: relative;
@@ -499,7 +507,7 @@ label {
 
 .a-text-bio {
     position: relative;
-    max-width: 40%;
+    /* width: 45%; */
     display: inline-block;
     margin-left: 5%;
 
