@@ -14,11 +14,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url("https://use.typekit.net/gqy1gcl.css");
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-@import url('https://fonts.googleapis.com/css?family=Damion');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 
 
 
@@ -28,7 +26,10 @@ body {
       background-attachment: fixed;
       margin-left: 12vw;
       margin-right: 12vw;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 }
+
 
 html {
     color: #222;
@@ -60,12 +61,18 @@ h2 {
       /* font-family: 'arial', sans-serif; */
 }
 
+h3 {
+      font-family: 'lato';
+      /* font-weight: bold; */
+      font-size: 13pt;
+      font-smooth: always;
+}
 
 h4 {
-      font-family: 'canada-type-gibson', sans-serif;
-      /* font-family: 'arial', sans-serif; */
-      font-weight: lighter;
-      font-size: 13pt;
+      font-family: 'lato';
+      font-weight: 200;
+      font-size: 12pt;
+      font-smooth: always;
 }
 
 h5 {
@@ -91,7 +98,7 @@ a{
       text-decoration: none;
       font-family: 'lato';
       color: #929292;
-      font-weight: normal;
+      font-weight: bold;
 }
 
 ul li{
@@ -113,6 +120,29 @@ ul li{
       height: 75px;
 }
 
+.o-navigation-alt {
+      display:inline-block;
+
+      margin-top: 50px;
+      margin-bottom: 25px;
+      position: sticky;
+      width: 100%;
+      height: 75px;
+}
+
+#a-img-hamburger {
+      float: right;
+      max-width: 50px;
+      height: 50px;
+      margin-top: 10px
+
+}
+
+#a-img-hamburger:hover{
+      background-color: #F4F4F4;
+      transition: .3s ease-in-out;
+}
+
 
 #a-logo {
       text-align: left;
@@ -126,6 +156,7 @@ ul li{
         list-style: inherit;
         height: 75px;
         margin-left: 10px;
+        margin-top: 5px;
 }
 
 
@@ -133,7 +164,6 @@ ul li{
       display: inline-block;
       float: right;
       text-align: left;
-      font-family: 'canada-type-gibson', sans-serif;
 }
 
 
@@ -167,13 +197,23 @@ ul li{
   width: 125px;
 }
 
+#a-menu-icon {
+  display: hidden;
+  background: #000000;
+
+}
+
+.m-menu-links{
+  float: right;
+}
+
 
 
 /* HEADLINE */
 
 .a-text-headline{
       display: inline-block;
-      font-family: 'pt-serif', serif;
+      /* font-family: 'pt-serif', serif; */
       font-weight: lighter;
       margin-bottom: 6%;
       text-align: left;
@@ -202,14 +242,10 @@ a:hover{
   margin-left: 50%;
 }
 
+.toggler{
 
-.a-underline {
-  /* width: 15px; */
-  /* height: 2px; */
-  /* background: red; */
-  /* transition: .3s ease-in-out; */
+right: 0;
 }
-
 
 
 /* CONTENT */
@@ -349,13 +385,89 @@ a:hover{
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .o-navigation h3 {
-        font-size: 11pt;
-        font-weight: normal;
-        font-family: 'lato';
+    font-family: 'lato';
+    font-weight: bold;
+    font-size: 13pt;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .o-navigation{
+  display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .o-navigation-alt{
+  display: none;
+  }
+}
+
+
+/*HEADER*/
+
+.m-menu-links {
+    float: right;
+  }
+
+label {
+    /* margin: 0 40px 0 0; */
+    font-size: 26px;
+    line-height: 70px;
+    /* display: none; */
+    width: 26px;
+    float: right;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    top:0px;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+
+#toggle {
+  display: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+.menu {
+    background-color: white;
+    text-align: center;
+    width: 75vw;
+    display: none;
+}
+.menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    clear: top;
+
+}
+#toggle:checked + .menu {
+    display: block;
+    margin-top: 0;
+}
+
+
+}
+
 
 
 /* ABOUT PAGE */
@@ -417,10 +529,6 @@ a:hover{
 }
 
 
-/* footer h5{ */
-
-/* color: #7C7C7C;} */
-
 
 /* MODAL SECTION */
 
@@ -429,8 +537,6 @@ a:hover{
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.7))
-
-
 }
 
 
