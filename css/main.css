@@ -22,6 +22,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+@import url("https://use.typekit.net/gqy1gcl.css");
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Satisfy&display=swap');
 
 
 
@@ -44,29 +46,21 @@ html {
 
 h1 {
 
-      font-family: 'canada-type-gibson', sans-serif;
-      font-weight: lighter;
-      font-size: 5vw;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 500;
       color: #000;
 }
 
-h1 a{
-      font-family: 'canada-type-gibson', sans-serif;
-      font-weight: normal;
-      font-size: 5vw;
-      color: #000;
-}
 
 h2 {
-      font-family: 'canada-type-gibson', sans-serif;
-      font-size: 18pt;
-      font-weight: lighter;
+      font-family: 'times', serif;
+      font-weight: 500;
+      color: #000
 }
 
 h3 {
-      font-family: 'lato';
-      font-size: 13pt;
-      font-smooth: always;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 14pt;
 }
 
 h4 {
@@ -85,14 +79,13 @@ h5 {
 
 p{
       display:block;
-      text-align: center;
-      font-family: 'lato';
-      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      /* font-family: 'lato'; */
+      font-weight: 100;
       font-size: 14pt;
-      color: #461F19;
-      padding: 20%;
-      font-weight: 400;
-      line-height: 2em;
+      /* color: #111; */
+      font-weight: 350;
+      line-height: 1.65em;
 }
 
 a{
@@ -100,7 +93,7 @@ a{
       text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: #929292;
-      font-weight: 600;
+      font-weight: 300;
 }
 
 ul li{
@@ -142,11 +135,21 @@ ul li{
 .o-navigation {
       display:inline-block;
       margin-top: 50px;
-      margin-bottom: 25px;
+      margin-bottom: -20px;
       position: sticky;
       width: 100%;
       height: 75px;
 }
+
+.o-navigation h3{
+  font-weight: 400;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+
+
+}
+
 
 
 .o-navigation-alt {
@@ -242,13 +245,54 @@ ul li{
 
 .a-text-headline{
       display: inline-block;
-      /* font-family: 'pt-serif', serif; */
-      font-weight: lighter;
-      margin-bottom: 6%;
       text-align: left;
-      /* width: 60vw; */
+      /* line-height: 225%; */
 }
 
+.a-text-headline h3{
+  font-weight: 500;
+  font-size: 1.25em;
+  color: #000;
+}
+
+
+
+.a-more-text{
+      display: inline-block;
+      /* margin-bottom: 5%; */
+      text-align: left;
+      line-height: 4vw;
+      margin-top: -1.0em;
+}
+
+.a-more-text p{
+    color: #666
+}
+
+.a-more-text ul{
+  display:block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-family: 'lato'; */
+  font-weight: 100;
+  font-size: 14pt;
+  color: #666;
+  font-weight: 350;
+  line-height: 1.65em;
+
+}
+
+
+.a-text-headline-small{
+      display: inline-block;
+      color: #333;
+      text-align: left;
+}
+
+.a-text-headline-small h3{
+      font-weight: 500;
+      font-size: 1.25em;
+      color: #000;
+}
 
 /* HOVER EFFECTS */
 
@@ -399,52 +443,6 @@ right: 0;
     opacity: 1;
 }
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-family: 'canada-type-gibson', sans-serif;
-    font-weight: lighter;
-    ont-size: 5vw;
-    /* color: black; */
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h1 a{
-    font-family: 'canada-type-gibson', sans-serif;
-    font-weight: lighter;
-    font-size: 5vw;
-    /* color: black; */
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h1 a:hover{
-    font-family: 'canada-type-gibson', sans-serif;
-    font-weight: lighter;
-    font-size: 5vw;
-    /* color: #FF6F59; */
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .o-navigation h3 {
-    font-family: 'lato';
-    font-weight: bold;
-    font-size: 13pt;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .o-navigation{
-  display: none;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .o-navigation-alt{
-  display: none;
-  }
-}
 
 
 /*HEADER*/
